@@ -11,11 +11,25 @@ struct EmojiView: View {
     
     let item : String
     
+    @Environment(\.presentationMode) var presentationMode
+    
     var body: some View {
-        Text(item)
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(Color.pink)
-            .font(.system(size: 120))
+        VStack(spacing: 30) {
+            Text(item)
+                .font(.system(size: 120))
+            Button(action: {
+                
+            }, label: {
+                Text("Go back to root")
+            })
+            Button(action: {
+                presentationMode.wrappedValue.dismiss()
+            }, label: {
+                Text("Go one step back")
+            })
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color.pink)
     }
 }
 
