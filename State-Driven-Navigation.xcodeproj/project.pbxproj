@@ -13,6 +13,10 @@
 		7A7FF9DF26519E9000099DD8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A7FF9DE26519E9000099DD8 /* Preview Assets.xcassets */; };
 		7A7FF9EA26519E9000099DD8 /* State_Driven_NavigationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7FF9E926519E9000099DD8 /* State_Driven_NavigationTests.swift */; };
 		7A7FF9F526519E9000099DD8 /* State_Driven_NavigationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7FF9F426519E9000099DD8 /* State_Driven_NavigationUITests.swift */; };
+		7A7FFA0526519F3B00099DD8 /* FirstTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7FFA0426519F3B00099DD8 /* FirstTabView.swift */; };
+		7A7FFA0726519F4400099DD8 /* SecondTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7FFA0626519F4400099DD8 /* SecondTabView.swift */; };
+		7A7FFA0926519FD600099DD8 /* FirstTabDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7FFA0826519FD600099DD8 /* FirstTabDetailView.swift */; };
+		7A7FFA0B2651A0CF00099DD8 /* EmojiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7FFA0A2651A0CF00099DD8 /* EmojiView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,10 @@
 		7A7FF9F026519E9000099DD8 /* State-Driven-NavigationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "State-Driven-NavigationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A7FF9F426519E9000099DD8 /* State_Driven_NavigationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State_Driven_NavigationUITests.swift; sourceTree = "<group>"; };
 		7A7FF9F626519E9000099DD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A7FFA0426519F3B00099DD8 /* FirstTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTabView.swift; sourceTree = "<group>"; };
+		7A7FFA0626519F4400099DD8 /* SecondTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTabView.swift; sourceTree = "<group>"; };
+		7A7FFA0826519FD600099DD8 /* FirstTabDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTabDetailView.swift; sourceTree = "<group>"; };
+		7A7FFA0A2651A0CF00099DD8 /* EmojiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +103,8 @@
 		7A7FF9D626519E8900099DD8 /* State-Driven-Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				7A7FFA0326519F2B00099DD8 /* Second Tab */,
+				7A7FFA0226519F2000099DD8 /* First Tab */,
 				7A7FF9D726519E8900099DD8 /* State_Driven_NavigationApp.swift */,
 				7A7FF9D926519E8900099DD8 /* ContentView.swift */,
 				7A7FF9DB26519E9000099DD8 /* Assets.xcassets */,
@@ -128,6 +138,24 @@
 				7A7FF9F626519E9000099DD8 /* Info.plist */,
 			);
 			path = "State-Driven-NavigationUITests";
+			sourceTree = "<group>";
+		};
+		7A7FFA0226519F2000099DD8 /* First Tab */ = {
+			isa = PBXGroup;
+			children = (
+				7A7FFA0426519F3B00099DD8 /* FirstTabView.swift */,
+				7A7FFA0826519FD600099DD8 /* FirstTabDetailView.swift */,
+				7A7FFA0A2651A0CF00099DD8 /* EmojiView.swift */,
+			);
+			path = "First Tab";
+			sourceTree = "<group>";
+		};
+		7A7FFA0326519F2B00099DD8 /* Second Tab */ = {
+			isa = PBXGroup;
+			children = (
+				7A7FFA0626519F4400099DD8 /* SecondTabView.swift */,
+			);
+			path = "Second Tab";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +287,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A7FFA0726519F4400099DD8 /* SecondTabView.swift in Sources */,
 				7A7FF9DA26519E8900099DD8 /* ContentView.swift in Sources */,
+				7A7FFA0526519F3B00099DD8 /* FirstTabView.swift in Sources */,
 				7A7FF9D826519E8900099DD8 /* State_Driven_NavigationApp.swift in Sources */,
+				7A7FFA0926519FD600099DD8 /* FirstTabDetailView.swift in Sources */,
+				7A7FFA0B2651A0CF00099DD8 /* EmojiView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
