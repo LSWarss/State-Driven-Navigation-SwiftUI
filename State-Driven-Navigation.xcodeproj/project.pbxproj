@@ -17,6 +17,7 @@
 		7A7FFA0726519F4400099DD8 /* SecondTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7FFA0626519F4400099DD8 /* SecondTabView.swift */; };
 		7A7FFA0926519FD600099DD8 /* FirstTabDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7FFA0826519FD600099DD8 /* FirstTabDetailView.swift */; };
 		7A7FFA0B2651A0CF00099DD8 /* EmojiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7FFA0A2651A0CF00099DD8 /* EmojiView.swift */; };
+		7A7FFA0D2652423100099DD8 /* StateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7FFA0C2652423100099DD8 /* StateManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		7A7FFA0626519F4400099DD8 /* SecondTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTabView.swift; sourceTree = "<group>"; };
 		7A7FFA0826519FD600099DD8 /* FirstTabDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTabDetailView.swift; sourceTree = "<group>"; };
 		7A7FFA0A2651A0CF00099DD8 /* EmojiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiView.swift; sourceTree = "<group>"; };
+		7A7FFA0C2652423100099DD8 /* StateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				7A7FFA0226519F2000099DD8 /* First Tab */,
 				7A7FF9D726519E8900099DD8 /* State_Driven_NavigationApp.swift */,
 				7A7FF9D926519E8900099DD8 /* ContentView.swift */,
+				7A7FFA0C2652423100099DD8 /* StateManager.swift */,
 				7A7FF9DB26519E9000099DD8 /* Assets.xcassets */,
 				7A7FF9E026519E9000099DD8 /* Info.plist */,
 				7A7FF9DD26519E9000099DD8 /* Preview Content */,
@@ -290,6 +293,7 @@
 				7A7FFA0726519F4400099DD8 /* SecondTabView.swift in Sources */,
 				7A7FF9DA26519E8900099DD8 /* ContentView.swift in Sources */,
 				7A7FFA0526519F3B00099DD8 /* FirstTabView.swift in Sources */,
+				7A7FFA0D2652423100099DD8 /* StateManager.swift in Sources */,
 				7A7FF9D826519E8900099DD8 /* State_Driven_NavigationApp.swift in Sources */,
 				7A7FFA0926519FD600099DD8 /* FirstTabDetailView.swift in Sources */,
 				7A7FFA0B2651A0CF00099DD8 /* EmojiView.swift in Sources */,

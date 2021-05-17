@@ -11,15 +11,16 @@ struct FirstTabDetailView: View {
     
     let items : [String] = ["🤖", "🛹", "❤️", "🐼"]
     
-    @State private var selectedItem : String? = nil
+//    @State private var selectedItem : String? = nil
+    @EnvironmentObject var stateManager : StateManager
     
     var body: some View {
         List(items, id: \.self) { item in
             
             NavigationLink(
-                destination: EmojiView(item: item, selectedEmoji: $selectedItem),
+                destination: EmojiView(item: item),
                 tag: item,
-                selection: $selectedItem,
+                selection: $stateManager.selectedItem,
                 label: {
                     Text(item)
                     
@@ -39,6 +40,8 @@ struct FirstTabDetailView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
         FirstTabDetailView()
+            .environmentObject(StateManager())
         }
+        
     }
 }

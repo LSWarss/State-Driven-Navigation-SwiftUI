@@ -12,7 +12,8 @@ struct EmojiView: View {
     let item : String
     
 //    @Environment(\.presentationMode) var presentationMode
-    @Binding var selectedEmoji : String?
+//    @Binding var selectedEmoji : String?
+    @EnvironmentObject var stateManager : StateManager
     
     
     var body: some View {
@@ -20,12 +21,12 @@ struct EmojiView: View {
             Text(item)
                 .font(.system(size: 120))
             Button(action: {
-                
+                stateManager.goToFirstRootView()
             }, label: {
                 Text("Go back to root")
             })
             Button(action: {
-                selectedEmoji = nil
+                stateManager.selectedItem = nil
 //                presentationMode.wrappedValue.dismiss()
             }, label: {
                 Text("Go one step back")
@@ -38,6 +39,7 @@ struct EmojiView: View {
 
 struct EmojiView_Previews: PreviewProvider {
     static var previews: some View {
-        EmojiView(item: "🛹", selectedEmoji: .constant("🛹"))
+        EmojiView(item: "🛹")
+            .environmentObject(StateManager())
     }
 }
