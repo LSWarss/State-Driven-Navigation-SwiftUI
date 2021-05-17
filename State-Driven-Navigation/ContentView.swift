@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var selection : Int = 1
+    
     var body: some View {
-        TabView {
+        TabView(selection: $selection) {
             FirstTabView()
                 .tabItem { Text("First") }
                 .tag(1)

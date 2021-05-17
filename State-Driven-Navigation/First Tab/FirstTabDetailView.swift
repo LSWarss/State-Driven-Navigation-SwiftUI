@@ -11,13 +11,25 @@ struct FirstTabDetailView: View {
     
     let items : [String] = ["🤖", "🛹", "❤️", "🐼"]
     
+    @State private var selectedItem : String? = nil
+    
     var body: some View {
         List(items, id: \.self) { item in
+            
             NavigationLink(
-                destination: EmojiView(item: item),
+                destination: EmojiView(item: item, selectedEmoji: $selectedItem),
+                tag: item,
+                selection: $selectedItem,
                 label: {
                     Text(item)
+                    
                 })
+//
+//            NavigationLink(
+//                destination: EmojiView(item: item),
+//                label: {
+//                    Text(item)
+//                })
                 
         }.navigationTitle("First detail view")
     }

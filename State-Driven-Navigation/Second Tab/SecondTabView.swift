@@ -8,8 +8,31 @@
 import SwiftUI
 
 struct SecondTabView: View {
+    
+    @State private var isPresenting : Bool = false
+    
     var body: some View {
-        Text("This is the second tab view")
+        
+        VStack {
+            Text("This is the second tab view")
+            Button(action: {
+                isPresenting.toggle()
+            }, label: {
+                Text("Show overlay")
+            })
+                .fullScreenCover(isPresented: $isPresenting, content: {
+                    VStack {
+                        Text("This is taking all the space")
+                        Button(action: {
+                            isPresenting.toggle()
+                        }, label: {
+                            Text("Done")
+                        })
+                    }
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .background(Color.yellow)
+            })
+        }
     }
 }
 

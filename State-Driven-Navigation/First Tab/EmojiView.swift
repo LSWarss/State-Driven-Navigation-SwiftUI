@@ -11,7 +11,9 @@ struct EmojiView: View {
     
     let item : String
     
-    @Environment(\.presentationMode) var presentationMode
+//    @Environment(\.presentationMode) var presentationMode
+    @Binding var selectedEmoji : String?
+    
     
     var body: some View {
         VStack(spacing: 30) {
@@ -23,7 +25,8 @@ struct EmojiView: View {
                 Text("Go back to root")
             })
             Button(action: {
-                presentationMode.wrappedValue.dismiss()
+                selectedEmoji = nil
+//                presentationMode.wrappedValue.dismiss()
             }, label: {
                 Text("Go one step back")
             })
@@ -35,6 +38,6 @@ struct EmojiView: View {
 
 struct EmojiView_Previews: PreviewProvider {
     static var previews: some View {
-        EmojiView(item: "🛹")
+        EmojiView(item: "🛹", selectedEmoji: .constant("🛹"))
     }
 }
